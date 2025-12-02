@@ -370,7 +370,7 @@ const HomePage = () => {
     {/* Jersey */}
     <div className="neon-card p-4 text-center hover:scale-105 transition-transform duration-300">
       <img
-        src="/public/assest/key.png"
+        src="/assest/key.png"
         alt="SkyOne Jersey"
         className="w-full h-40 object-cover rounded-lg mb-4 animate-glow"
       />
@@ -383,7 +383,7 @@ const HomePage = () => {
     {/* Gaming Caps */}
     <div className="neon-card p-4 text-center hover:scale-105 transition-transform duration-300">
       <img
-        src="/public/assest/cap.png"
+        src="/assest/cap.png"
         alt="Gaming Cap"
         className="w-full h-40 object-cover rounded-lg mb-4 animate-glow"
       />
@@ -409,7 +409,7 @@ const HomePage = () => {
     {/* Hoodies */}
     <div className="neon-card p-4 text-center hover:scale-105 transition-transform duration-300">
       <img
-        src="/public/assest/jersey.png"
+        src="/assest/jersey.png"
         alt="Hoodie"
         className="w-full h-40 object-cover rounded-lg mb-4 animate-glow"
       />
