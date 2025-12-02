@@ -1,4 +1,4 @@
-## ✅ **SkyOne Esport**
+##  **SkyOne Esport**
 
 ````markdown
 # 🎮 SkyOne ESP – Esports Gaming Platform
@@ -89,8 +89,7 @@ SkyOne-ESP/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/Sachin0613/SkyOne-ESP.git
-cd SkyOne-ESP
+git clone https://github.com/Sachin0613/skyone
 ```
 
 ### 2️⃣ Install dependencies
