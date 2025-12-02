@@ -156,7 +156,7 @@ const Hero3D = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-60"
       >
-        <source src="/public/assest/ff.mp4" type="video/mp4" />
+        <source src="/assest/ff.mp4" type="video/mp4" />
       </video>
 
       <div className="absolute inset-0 bg-black/20"></div>
