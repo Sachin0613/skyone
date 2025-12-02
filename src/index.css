@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-light: #ffffff;
+  --color-dark: #0A0A0F;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: #ffffff;
+  background: #0A0A0F;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Neon Components */
+.neon-card {
+  @apply bg-dark-light/80 backdrop-blur-md border border-neon-blue/30 rounded-container p-6 transition-all duration-300;
+  box-shadow: 0 4px 20px rgba(76, 107, 255, 0.1);
+}
+
+.neon-card:hover {
+  @apply border-neon-blue/60 transform -translate-y-2;
+  box-shadow: 0 8px 40px rgba(76, 107, 255, 0.2);
+}
+
+.neon-button {
+  @apply px-6 py-3 bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105;
+  box-shadow: 0 4px 15px rgba(76, 107, 255, 0.3);
+}
+
+.neon-button:hover {
+  box-shadow: 0 6px 25px rgba(76, 107, 255, 0.5);
+}
+
+.neon-input {
+  @apply w-full px-4 py-3 bg-dark-light/50 border border-neon-blue/30 rounded-lg text-black placeholder-gray-500 focus:border-red-500 focus:outline-none transition-all duration-300
+;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.neon-input:focus {
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3), 0 0 15px rgba(76, 107, 255, 0.3);
+}
+
+.neon-text {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px #4C6BFF, 0 0 20px #4C6BFF, 0 0 30px #4C6BFF;
+}
+
+/* Gaming UI Elements */
+.rank-badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold;
+  background: linear-gradient(135deg, #4C6BFF, #A85CFF);
+  box-shadow: 0 2px 10px rgba(76, 107, 255, 0.3);
+}
+
+.tournament-card {
+  @apply neon-card relative overflow-hidden;
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(22, 33, 62, 0.8));
+}
+
+.tournament-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(76, 107, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.tournament-card:hover::before {
+  left: 100%;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A2E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #4C6BFF, #A85CFF);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #3B5AFF, #9A4EFF);
+}
+
+/* Auth specific styles */
+.auth-input-field {
+  @apply neon-input;
+}
+
+.auth-button {
+  @apply neon-button w-full;
+}
+
+/* Loading Animation */
+.loading-spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-2 border-neon-blue border-t-transparent;
+}
+
+/* 3D Scene Container */
+.hero-3d {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .hero-3d {
+    height: 60vh;
+  }
+  
+  .neon-card {
+    @apply p-4;
+  }
+}
