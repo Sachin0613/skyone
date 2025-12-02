@@ -396,7 +396,7 @@ const HomePage = () => {
     {/* Keychains */}
     <div className="neon-card p-4 text-center hover:scale-105 transition-transform duration-300">
       <img
-        src="/public/assest/hoodie.png"
+        src="/assest/hoodie.png"
         alt="Keychains"
         className="w-full h-40 object-cover rounded-lg mb-4 animate-glow"
       />
