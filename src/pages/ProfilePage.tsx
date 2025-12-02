@@ -264,7 +264,7 @@ const ProfilePage = () => {
                     filter: "brightness(1.3) contrast(1.2) saturate(1.1)",
                   }}
                 >
-                  <source src="/public/assest/intro.mp4" type="video/mp4" />
+                  <source src="/assest/intro.mp4" type="video/mp4" />
                 </video>
 
 
